@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+      <div class="header">
+        <div class="img"><img src="/img/anh-nen-toi-cho-dien-thoai_101025597.jpg" alt=""></div>
+        <div class="header-content">
+          <p>My Web</p>
+        </div>
+      </div>
+
+      <div class="content-header">
+        <p>This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.</p><p>Sign up <em>now</em></p>
+        <p>You <em>know</em> you want to</p>
+      </div>
+
+        <form action="" method="POST" class="form" id="register-form">
+          
+          <h3 class="heading">Let's do this!</h3>
+          <div class="spacer"></div>
+      
+          <div class="box">
+            <div class="left">
+              <div class="form-group">
+                <label for="fullname" class="form-label">First name</label>
+                <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Nguyễn Văn A" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rules="required|email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+              </div>
+            </div>
+  
+            <div class="right">
+              <div class="form-group">
+                <label for="fullname" class="form-label">Last name</label>
+                <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Nguyễn Văn A" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="email" class="form-label">Phone number</label>
+                <input rules="required|min:10" type="text" placeholder="VD: 0123456789" class="form-control">
+                <span class="form-message"></span>
+              </div>
+          
+              <div class="form-group">
+                <label for="password" class="form-label">Confirm Password</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+              </div>
+            </div>
+          </div>
+      
+          <button class="form-submit">Creat Account</button>
+        </form>
+      
+      </div>
+</body>
+<script>
+    var registerForm = new Validator('#register-form')
+</script>
+</html>
